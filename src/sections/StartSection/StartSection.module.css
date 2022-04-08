@@ -1,5 +1,6 @@
 .startSection {
   min-height: 100vh;
+  background-color: #ff0000;
 }
 
 .startSection p {
