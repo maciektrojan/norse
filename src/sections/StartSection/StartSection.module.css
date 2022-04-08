@@ -1,0 +1,7 @@
+.startSection {
+  min-height: 100vh;
+}
+
+.startSection p {
+  text-align: center;
+}

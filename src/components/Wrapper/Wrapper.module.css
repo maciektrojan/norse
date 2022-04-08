@@ -1,0 +1,159 @@
+@value colors: "../colors.module.css";
+@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+@value navWidth: 200px;
+
+*:focus-visible {
+  outline: 2px solid primaryMain;
+  outline-offset: -2px;
+  border-radius: 8px;
+}
+
+.wrapper {
+  background-color: #eee;
+  transition: margin 0.4s;
+}
+
+.closed {
+  margin-left: calc(0px - navWidth + 48px);
+}
+
+.wrapper nav {
+  position: fixed;
+  width: navWidth;
+  height: 100vh;
+  background-color: grey900;
+}
+
+.wrapper nav > div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.arrow {
+  border: 0;
+  border-radius: 14px;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  background-color: grey0;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.open .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow svg {
+  margin: 5px;
+  transform: translateX(1px);
+  font-size: 18px;
+  color: grey900;
+}
+
+.label {
+  text-align: right;
+  margin: 16px 10px;
+  border-top: 1px solid grey800;
+  padding-top: 12px;
+  font-size: 9px !important;
+  color: grey500;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 1;
+  top: 54px;
+  left: 0;
+  width: 10px;
+  height: 1px;
+  background-color: grey900;
+}
+
+.wrapper nav a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2px;
+  padding-left: 16px;
+  color: grey500;
+  cursor: pointer;
+}
+
+.wrapper nav a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -2px;
+  width: 48px;
+  height: 48px;
+}
+
+.tooltip {
+  position: absolute;
+  left: calc(100% + 16px);
+  display: none;
+  border-radius: 16px;
+  padding: 6px 16px;
+  background-color: grey0;
+  line-height: 16px;
+  color: grey900;
+  pointer-events: none;
+}
+
+.closed nav a:hover .tooltip,
+.closed nav a:focus-visible .tooltip {
+  display: initial;
+}
+
+.wrapper nav .active {
+  background-color: grey800;
+  color: grey0;
+}
+
+.wrapper nav .active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 2px;
+  height: 100%;
+  background-color: grey0;
+}
+
+/* -------- */
+
+.container {
+  margin-left: navWidth;
+}
+
+.container::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0s 0.4s;
+}
+
+.open .container::before {
+  opacity: 0.2;
+  visibility: visible;
+  transition: opacity 0.4s;
+}
+
+.container header {
+  height: 80px;
+  background-color: #ddd;
+}
+
+.container main {
+  margin: 0 auto;
+  max-width: 1100px;
+  background-color: #ccc;
+}

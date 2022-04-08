@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+@value colors: "../colors.module.css";
+@value primaryMain, error, warning, info, grey0, grey500, grey900 from colors;
+
+body,
+a {
+  color: grey900;
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.variant-h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.variant-h2 {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.variant-body1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.variant-body2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.variant-body3 {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+.color-primaryMain {
+  color: primaryMain;
+}
+
+/* .color-error {
+  color: error;
+}
+
+.color-warning {
+  color: warning;
+}
+
+.color-info {
+  color: info;
+} */
+
+.color-grey0 {
+  color: grey0;
+}
+
+.color-grey500 {
+  color: grey500;
+}
+
+.color-grey900 {
+  color: grey900;
+}
