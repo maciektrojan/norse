@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import HomeIcon from "@mui/icons-material/Home";
-import PersonIcon from "@mui/icons-material/Person";
-import ConstructionIcon from "@mui/icons-material/Construction";
 import CommentIcon from "@mui/icons-material/Comment";
-import PeopleIcon from "@mui/icons-material/People";
+import ConstructionIcon from "@mui/icons-material/Construction";
+import HomeIcon from "@mui/icons-material/Home";
 import InboxIcon from "@mui/icons-material/Inbox";
+import PeopleIcon from "@mui/icons-material/People";
+import PersonIcon from "@mui/icons-material/Person";
 import clsx from "clsx";
 import { Typography } from "../Typography";
 import styles from "./Wrapper.module.css";
@@ -41,9 +41,9 @@ export const Wrapper: React.FC = ({ children }) => {
             <ArrowForwardIosIcon />
           </button>
         </div>
-        <Typography className={styles.label} variant="body3">
+        {/* <Typography className={styles.label} variant="body3">
           MENU
-        </Typography>
+        </Typography> */}
         {links.map((link) => {
           return (
             <Link
@@ -65,7 +65,6 @@ export const Wrapper: React.FC = ({ children }) => {
         })}
       </nav>
       <div className={styles.container}>
-        <header />
         <main>{children}</main>
       </div>
     </div>

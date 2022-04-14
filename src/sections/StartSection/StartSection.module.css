@@ -1,8 +1,42 @@
+@value colors: "../../components/colors.module.css";
+@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+
 .startSection {
-  min-height: 100vh;
-  background-color: #ff0000;
+  border-bottom: 1px dashed primaryMain;
 }
 
-.startSection p {
-  text-align: center;
+.startSection header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.startSection header div {
+  display: flex;
+  align-items: center;
+  margin-right: -8px;
+}
+
+.startSection header a {
+  margin-left: 16px;
+  padding: 8px;
+  height: 24px;
+  outline-offset: 2px;
+}
+
+.startSection header p {
+  line-height: 24px;
+}
+
+.startSection > div p:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.startSection > div p:nth-child(3) {
+  margin: 24px 0 32px 0;
+  /* max-width: 90%; */
+}
+
+.startSection > div button:nth-child(5) {
+  margin-left: 16px;
 }

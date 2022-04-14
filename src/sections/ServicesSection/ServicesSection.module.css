@@ -1,7 +1,21 @@
+@value colors: "../../components/colors.module.css";
+@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+
 .servicesSection {
-  min-height: 100vh;
+  /* border-bottom: 1px dashed primaryMain; */
 }
 
-.servicesSection p {
-  text-align: center;
+.servicesSection div > p {
+  margin: 24px 0;
 }
+
+.servicesSection ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+/* @media (max-width: 1024px) {
+  .servicesSection h1 {
+    text-align: center;
+  }
+} */

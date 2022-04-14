@@ -19,14 +19,14 @@ p {
 
 .variant-h1 {
   font-family: "Barlow", sans-serif;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .variant-h2 {
   font-family: "Barlow", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700; /* usunąć 600 */
 }
 
 .variant-body1 {
