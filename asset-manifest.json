@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/norse/static/css/main.59753f99.css",
-    "main.js": "/norse/static/js/main.e41be205.js",
+    "main.js": "/norse/static/js/main.4219b582.js",
     "index.html": "/norse/index.html",
     "main.59753f99.css.map": "/norse/static/css/main.59753f99.css.map",
-    "main.e41be205.js.map": "/norse/static/js/main.e41be205.js.map"
+    "main.4219b582.js.map": "/norse/static/js/main.4219b582.js.map"
   },
   "entrypoints": [
     "static/css/main.59753f99.css",
-    "static/js/main.e41be205.js"
+    "static/js/main.4219b582.js"
   ]
 }
