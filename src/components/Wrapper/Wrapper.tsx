@@ -55,7 +55,7 @@ export const Wrapper: React.FC = ({ children }) => {
               activeClass={styles.active}
               href=""
             >
-              <Typography variant="body2">{link.content}</Typography>
+              <Typography variant="body2">{/* {link.content} */}</Typography>
               <div>{link.icon}</div>
               <Typography className={styles.tooltip} variant="body3">
                 {link.content}

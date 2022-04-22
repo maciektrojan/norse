@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
   const rootClassName = clsx(
     styles.button,
     styles[`button-${variant}`],
-    className,
+    className
   );
 
   return (

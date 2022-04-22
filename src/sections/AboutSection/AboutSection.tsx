@@ -37,31 +37,47 @@ export function AboutSection(): React.ReactElement {
   }, [number]);
 
   return (
-    <section className={styles.aboutSection} id="about">
-      <div>
-        {items.map((item) => {
-          return (
-            <div
-              key={item.id}
-              className={item.id === number ? styles.active : ""}
-              onMouseOver={() => {
-                handleHover(item);
-              }}
-            >
-              {item.icon}
-              <div>
-                <Typography variant="h2" weight="bold">
-                  {item.content}
-                </Typography>
+    <div id="about">
+      <div className="padding" />
+      <section className={styles.aboutSection}>
+        <Typography variant="body3" weight="bold" color="grey0">
+          O nas
+        </Typography>
+        {/* <Typography variant="h1">
+          Oferujemy szereg usług instalacyjnych
+        </Typography>
+        <Typography variant="body2" color="grey800">
+          Zapewniamy kompleksowe wykonanie instalacji od <b>projektu</b> przez{" "}
+          <b>odbiór</b> po <b>serwis</b>.
+          <br />
+          W tym szczegółową wycenę, profesjonalne doradztwo, sprawną logistykę
+          i fachowe wykonanie.
+        </Typography> */}
+        <div>
+          {items.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className={item.id === number ? styles.active : ""}
+                onMouseOver={() => {
+                  handleHover(item);
+                }}
+              >
+                {item.icon}
                 <div>
-                  <Typography variant="body3">Dowiedz się więcej</Typography>
-                  <EastIcon />
+                  <Typography variant="h2" weight="bold">
+                    {item.content}
+                  </Typography>
+                  <div>
+                    <Typography variant="body3">Dowiedz się więcej</Typography>
+                    <EastIcon />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    </section>
+            );
+          })}
+        </div>
+      </section>
+    </div>
   );
 }

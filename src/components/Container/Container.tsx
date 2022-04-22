@@ -25,7 +25,9 @@ export const Container: React.FC<ContainerProps> = ({
   return (
     <div className={rootClassName}>
       <div>{children}</div>
-      <img src={src} alt={alt} />
+      <div>
+        <img src={src} alt={alt} />
+      </div>
     </div>
   );
 };

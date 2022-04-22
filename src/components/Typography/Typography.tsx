@@ -13,6 +13,7 @@ type TypographyProps = {
     // | "info"
     | "grey0"
     | "grey500"
+    | "grey800"
     | "grey900";
 };
 

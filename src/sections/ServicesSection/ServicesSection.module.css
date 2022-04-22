@@ -2,7 +2,16 @@
 @value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
 
 .servicesSection {
-  /* border-bottom: 1px dashed primaryMain; */
+  padding: 0 40px;
+  background-color: grey50;
+}
+
+.servicesSection div > p:nth-child(1) {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 4px 12px;
+  background-color: primaryMain;
 }
 
 .servicesSection div > p {
@@ -13,6 +22,20 @@
   margin: 0;
   padding-left: 16px;
 }
+
+.servicesSection button {
+  margin-top: 24px;
+}
+
+.servicesSection > div:nth-child(1) img,
+.servicesSection > div:nth-child(2) img,
+.servicesSection > div:nth-child(3) img {
+  transform: translateX(-80px);
+}
+
+/* .servicesSection > div:nth-child(3) img {
+  transform: translateX(-35px);
+} */
 
 /* @media (max-width: 1024px) {
   .servicesSection h1 {
