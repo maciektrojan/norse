@@ -65,7 +65,7 @@ export function StartSection(): React.ReactElement {
             </div> */}
           </div>
           <div onMouseDown={handleClick}>
-            <button></button>
+            <button tabIndex={-1}></button>
           </div>
         </div>
       </div>

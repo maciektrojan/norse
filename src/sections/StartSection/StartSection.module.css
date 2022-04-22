@@ -111,7 +111,6 @@
   background-color: grey0;
   transform: translate(50%, -50%);
   cursor: inherit;
-  outline: 0;
 }
 
 .container > div > div:nth-child(2) button::before {
