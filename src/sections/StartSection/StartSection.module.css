@@ -1,9 +1,6 @@
 @value colors: "../../components/colors.module.css";
 @value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
 
-/* .startSection {
-} */
-
 .startSection header {
   display: flex;
   justify-content: space-between;
@@ -13,41 +10,9 @@
 /* .startSection header div {
   display: flex;
   align-items: center;
-  margin-right: -8px;
-}
-
-.startSection header a {
-  margin-left: 16px;
-  padding: 8px;
-  height: 24px;
-  outline-offset: 2px;
-}
-
-.startSection header p {
-  line-height: 24px;
 } */
 
-/* .startSection > div {
-  padding-bottom: 40px;
-}
-
-.startSection > div p:nth-child(1) {
-  margin-bottom: 16px;
-}
-
-.startSection > div p:nth-child(3) {
-  margin: 24px 0 32px 0;
-}
-
-.startSection > div button:nth-child(5) {
-  margin-left: 16px;
-}
-
-.startSection img {
-  transform: translateX(-80px);
-} */
-
-.test {
+.container {
   position: relative;
   background-image: url(../../components/1.jpeg);
   background-position: -1px -4px;
@@ -55,7 +20,7 @@
   background-size: 1200px;
 }
 
-.test::before {
+.container::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -64,7 +29,7 @@
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.test > div {
+.container > div {
   position: relative;
   max-width: 100%;
   height: calc(1200px / 16 * 9 - 4px - 2px);
@@ -72,7 +37,7 @@
   background-size: 1200px;
 }
 
-.test > div > div:nth-child(1) {
+.container > div > div:nth-child(1) {
   position: absolute;
   z-index: 2;
   top: 25%;
@@ -80,13 +45,17 @@
   width: 800px; /* zmienić */
 }
 
-.test span {
+.container span {
   position: absolute;
   color: primaryMain;
   transition: transform 0.4s;
 }
 
-.test span::before {
+.container .active {
+  transform: translateY(-24px);
+}
+
+.container span::before {
   content: "fachowe wykonanie";
   position: absolute;
   margin-top: 16px;
@@ -95,7 +64,11 @@
   transition: opacity 0.1s;
 }
 
-.test span::after {
+.container .active::before {
+  opacity: 0;
+}
+
+.container span::after {
   content: "niskie koszty eksploatacji";
   position: absolute;
   top: 24px;
@@ -106,19 +79,16 @@
   transition: opacity 0.1s;
 }
 
-.test .active {
-  transform: translateY(-24px);
-}
-
-.test .active::before {
-  opacity: 0;
-}
-
-.test .active::after {
+.container .active::after {
   opacity: 1;
 }
 
-.test > div > div:nth-child(2) {
+/* .test {
+  margin-top: 72px;
+  padding-top: 24px;
+} */
+
+.container > div > div:nth-child(2) {
   position: absolute;
   z-index: 1;
   right: 0;
@@ -129,7 +99,7 @@
   user-select: none;
 }
 
-.test button {
+.container > div > div:nth-child(2) button {
   position: absolute;
   top: 50%;
   right: 0;
@@ -141,9 +111,10 @@
   background-color: grey0;
   transform: translate(50%, -50%);
   cursor: inherit;
+  outline: 0;
 }
 
-.test button::before {
+.container > div > div:nth-child(2) button::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -153,10 +124,10 @@
   border-radius: 12px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
-  animation: test 1s ease-in-out infinite alternate-reverse;
+  animation: pulse 1s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes test {
+@keyframes pulse {
   0% {
     transform: scale(1);
   }

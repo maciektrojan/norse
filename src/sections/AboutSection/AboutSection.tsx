@@ -40,19 +40,20 @@ export function AboutSection(): React.ReactElement {
     <div id="about">
       <div className="padding" />
       <section className={styles.aboutSection}>
-        <Typography variant="body3" weight="bold" color="grey0">
-          O nas
-        </Typography>
-        {/* <Typography variant="h1">
-          Oferujemy szereg usług instalacyjnych
-        </Typography>
-        <Typography variant="body2" color="grey800">
-          Zapewniamy kompleksowe wykonanie instalacji od <b>projektu</b> przez{" "}
-          <b>odbiór</b> po <b>serwis</b>.
-          <br />
-          W tym szczegółową wycenę, profesjonalne doradztwo, sprawną logistykę
-          i fachowe wykonanie.
-        </Typography> */}
+        <div>
+          <Typography variant="body3" weight="bold" color="grey0">
+            O nas
+          </Typography>
+          <div>
+            <Typography variant="h2">
+              Oferujemy szereg usług instalacyjnych
+            </Typography>
+            <Typography variant="body2" color="grey800">
+              Zapewniamy kompleksowe wykonanie instalacji od <b>projektu</b>{" "}
+              przez <b>odbiór</b> po <b>serwis</b>, w tym:
+            </Typography>
+          </div>
+        </div>
         <div>
           {items.map((item) => {
             return (

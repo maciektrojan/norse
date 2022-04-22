@@ -41,9 +41,9 @@ export const Wrapper: React.FC = ({ children }) => {
             <ArrowForwardIosIcon />
           </button>
         </div>
-        {/* <Typography className={styles.label} variant="body3">
+        <Typography className={styles.label} variant="body3">
           MENU
-        </Typography> */}
+        </Typography>
         {links.map((link) => {
           return (
             <Link
@@ -55,7 +55,7 @@ export const Wrapper: React.FC = ({ children }) => {
               activeClass={styles.active}
               href=""
             >
-              <Typography variant="body2">{/* {link.content} */}</Typography>
+              <Typography variant="body3">{link.content}</Typography>
               <div>{link.icon}</div>
               <Typography className={styles.tooltip} variant="body3">
                 {link.content}

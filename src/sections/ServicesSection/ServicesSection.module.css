@@ -12,6 +12,7 @@
   margin-bottom: 24px;
   padding: 4px 12px;
   background-color: primaryMain;
+  line-height: 16px;
 }
 
 .servicesSection div > p {
@@ -32,13 +33,3 @@
 .servicesSection > div:nth-child(3) img {
   transform: translateX(-80px);
 }
-
-/* .servicesSection > div:nth-child(3) img {
-  transform: translateX(-35px);
-} */
-
-/* @media (max-width: 1024px) {
-  .servicesSection h1 {
-    text-align: center;
-  }
-} */

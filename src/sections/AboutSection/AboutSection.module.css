@@ -1,9 +1,25 @@
 @value colors: "../../components/colors.module.css";
 @value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
 
-.aboutSection {
-  padding: 40px;
-  background-color: grey50;
+.aboutSection > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.aboutSection > div:nth-child(1) p:nth-child(1) {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: primaryMain;
+  line-height: 16px;
+}
+
+.aboutSection > div:nth-child(1) > div {
+  margin-left: 24px;
+}
+
+.aboutSection > div:nth-child(1) > div p {
+  margin-top: 8px;
 }
 
 .aboutSection b {
@@ -11,27 +27,15 @@
   color: grey900;
 }
 
-.aboutSection > p:nth-child(1) {
-  display: inline-block;
-  padding: 4px 12px;
-  background-color: primaryMain;
-}
-
-.aboutSection > h1 {
-  margin: 24px 0;
-}
-
-.aboutSection > p:nth-child(3) {
-  width: 75%;
-}
-
-.aboutSection > div {
+.aboutSection > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 38px;
+  padding-top: calc(4px / 2);
+  padding-bottom: calc(4px / 2 + 4px);
 }
 
-.aboutSection > div > div {
+.aboutSection > div:nth-child(2) > div {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -50,27 +54,26 @@
   cursor: pointer;
 }
 
-.aboutSection > div > div:nth-child(1) {
+.aboutSection > div:nth-child(2) > div:nth-child(1) {
   background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
-  background-position-x: -200px;
 }
 
-.aboutSection > div > div:nth-child(2) {
-  background-image: url(https://as1.ftcdn.net/v2/jpg/01/20/82/08/1000_F_120820887_jigp0jW6jGM2ZVR3DgKZESrtcwBiIAir.jpg);
-  background-position-x: -25px;
+.aboutSection > div:nth-child(2) > div:nth-child(2) {
+  /* background-image: url(https://as1.ftcdn.net/v2/jpg/01/20/82/08/1000_F_120820887_jigp0jW6jGM2ZVR3DgKZESrtcwBiIAir.jpg); */
+  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
 }
 
-.aboutSection > div > div:nth-child(3) {
-  background-image: url(https://as2.ftcdn.net/v2/jpg/04/94/33/07/1000_F_494330727_n0zSoKQQoAzAXweFPEaUMz6hMIMSnNKS.jpg);
-  background-position-x: -75px;
+.aboutSection > div:nth-child(2) > div:nth-child(3) {
+  /* background-image: url(https://as2.ftcdn.net/v2/jpg/04/94/33/07/1000_F_494330727_n0zSoKQQoAzAXweFPEaUMz6hMIMSnNKS.jpg); */
+  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
 }
 
-.aboutSection > div > div:nth-child(4) {
-  background-image: url(https://as1.ftcdn.net/v2/jpg/03/13/50/64/1000_F_313506490_B4fL3liu4qXrY2DRlgRVlpX9CmKqW94X.jpg);
-  background-position-x: -300px;
+.aboutSection > div:nth-child(2) > div:nth-child(4) {
+  /* background-image: url(https://as1.ftcdn.net/v2/jpg/03/13/50/64/1000_F_313506490_B4fL3liu4qXrY2DRlgRVlpX9CmKqW94X.jpg); */
+  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
 }
 
-.aboutSection > div > div::before {
+.aboutSection > div:nth-child(2) > div::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -80,31 +83,11 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
-.aboutSection > div > div > svg {
-  padding: 8px;
-  background-color: primaryMain;
-}
-
-.aboutSection > div > div > div {
-  position: relative;
-}
-
-.aboutSection > div > div > div > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
-}
-
-.aboutSection h2 {
-  width: 0;
-}
-
-.aboutSection .active {
+.aboutSection > div:nth-child(2) .active {
   transform: scale(1.01);
 }
 
-.aboutSection .active::after {
+.aboutSection > div:nth-child(2) .active::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -124,4 +107,24 @@
   100% {
     transform: scaleX(1) translateZ(-1px);
   }
+}
+
+.aboutSection > div:nth-child(2) > div > svg {
+  padding: 8px;
+  background-color: primaryMain;
+}
+
+.aboutSection > div:nth-child(2) > div > div {
+  position: relative;
+}
+
+.aboutSection > div:nth-child(2) h2 {
+  width: 0;
+}
+
+.aboutSection > div:nth-child(2) > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
 }

@@ -5,7 +5,7 @@
 *:focus-visible {
   border-color: transparent !important;
   border-radius: 8px;
-  outline: 2px solid primaryMain;
+  outline: 1.5px solid primaryMain;
   outline-offset: -1px;
 }
 
@@ -13,16 +13,16 @@ body {
   overflow-x: hidden;
 }
 
-/* body::before {
+body::before {
   content: "";
   position: fixed;
-  z-index: 1;
-  top: 54px;
+  z-index: 4;
+  top: 48px;
   left: 0;
   width: 10px;
   height: 1px;
   background-color: grey900;
-} */
+}
 
 .wrapper {
   width: calc(100% + navWidth - 48px);
@@ -37,7 +37,7 @@ body {
 
 .wrapper nav {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: navWidth;
   height: 100%;
   background-color: grey900;
@@ -71,16 +71,17 @@ body {
   color: grey900;
 }
 
-/* .label {
+.label {
   text-align: right;
-  margin: 16px 10px;
+  margin: 12px 10px;
   border-top: 1px solid grey800;
   padding-top: 12px;
-  font-size: 9px !important;
+  font-size: 9px;
+  line-height: 15px;
   color: grey500;
-} */
+}
 
-.wrapper nav a {
+.wrapper a {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -91,11 +92,26 @@ body {
   cursor: pointer;
 }
 
-.wrapper nav a:focus-visible {
-  outline-offset: -2px;
+.wrapper a:focus-visible {
+  outline-offset: -1.5px;
 }
 
-.wrapper nav a div {
+.wrapper .active {
+  background-color: grey800;
+  color: grey0;
+}
+
+.wrapper .active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 2px;
+  height: 100%;
+  background-color: grey0;
+}
+
+.wrapper a div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,8 +124,8 @@ body {
   position: absolute;
   left: calc(100% + 24px);
   display: none;
-  border: 1px solid grey200;
-  padding: 8px 16px;
+  border: 1px solid grey300;
+  padding: 4px 12px;
   background-color: grey50;
   line-height: 16px;
   color: grey900;
@@ -121,35 +137,18 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  border-bottom: 1px solid grey200;
-  border-left: 1px solid grey200;
+  border-bottom: 1px solid grey300;
+  border-left: 1px solid grey300;
   width: 12px;
   height: 12px;
   transform: translate(calc(-50% - 0.75px), -50%) rotate(45deg);
   background-color: grey50;
 }
 
-.closed nav a:hover .tooltip,
-.closed nav a:focus-visible .tooltip {
-  /* display: initial; */
+.closed a:hover .tooltip,
+.closed a:focus-visible .tooltip {
+  display: initial;
 }
-
-.wrapper nav .active {
-  background-color: grey800;
-  color: grey0;
-}
-
-.wrapper nav .active::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -2px;
-  width: 2px;
-  height: 100%;
-  background-color: grey0;
-}
-
-/* -------- */
 
 .container {
   margin-left: navWidth;
