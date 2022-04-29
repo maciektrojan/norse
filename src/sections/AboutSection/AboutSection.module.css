@@ -55,22 +55,23 @@
 }
 
 .aboutSection > div:nth-child(2) > div:nth-child(1) {
-  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
+  background-image: url(../../images/2.1.png);
+  background-position: -11px;
 }
 
 .aboutSection > div:nth-child(2) > div:nth-child(2) {
-  /* background-image: url(https://as1.ftcdn.net/v2/jpg/01/20/82/08/1000_F_120820887_jigp0jW6jGM2ZVR3DgKZESrtcwBiIAir.jpg); */
-  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
+  background-image: url(../../images/2.2.png);
+  background-position: 0;
 }
 
 .aboutSection > div:nth-child(2) > div:nth-child(3) {
-  /* background-image: url(https://as2.ftcdn.net/v2/jpg/04/94/33/07/1000_F_494330727_n0zSoKQQoAzAXweFPEaUMz6hMIMSnNKS.jpg); */
-  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
+  background-image: url(../../images/2.3.png);
+  background-position: 0;
 }
 
 .aboutSection > div:nth-child(2) > div:nth-child(4) {
-  /* background-image: url(https://as1.ftcdn.net/v2/jpg/03/13/50/64/1000_F_313506490_B4fL3liu4qXrY2DRlgRVlpX9CmKqW94X.jpg); */
-  background-image: url(https://as2.ftcdn.net/v2/jpg/03/58/88/09/1000_F_358880933_53RGZUK8zzgwNRMfoRSH02zgWyIJuIWq.jpg);
+  background-image: url(../../images/2.4.png);
+  background-position: -11px;
 }
 
 .aboutSection > div:nth-child(2) > div::before {

@@ -17,10 +17,10 @@ body::before {
   content: "";
   position: fixed;
   z-index: 4;
-  top: 48px;
+  top: 47px;
   left: 0;
   width: 10px;
-  height: 1px;
+  height: 3px;
   background-color: grey900;
 }
 

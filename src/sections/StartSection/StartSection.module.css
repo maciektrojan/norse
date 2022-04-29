@@ -14,9 +14,7 @@
 
 .container {
   position: relative;
-  background-image: url(../../components/1.jpeg);
-  background-position: -1px -4px;
-  background-repeat: no-repeat;
+  background-image: url(../../images/1.1.png);
   background-size: 1200px;
 }
 
@@ -32,9 +30,13 @@
 .container > div {
   position: relative;
   max-width: 100%;
-  height: calc(1200px / 16 * 9 - 4px - 2px);
-  background-image: url(../../components/2.jpeg);
+  height: calc(1200px / 16 * 9);
+  background-image: url(../../images/1.2.png);
   background-size: 1200px;
+}
+
+.container > .active {
+  transition: width 2s;
 }
 
 .container > div > div:nth-child(1) {
@@ -51,7 +53,7 @@
   transition: transform 0.4s;
 }
 
-.container .active {
+.container > div .active {
   transform: translateY(-24px);
 }
 
@@ -64,7 +66,7 @@
   transition: opacity 0.1s;
 }
 
-.container .active::before {
+.container > div .active::before {
   opacity: 0;
 }
 
@@ -79,7 +81,7 @@
   transition: opacity 0.1s;
 }
 
-.container .active::after {
+.container > div .active::after {
   opacity: 1;
 }
 

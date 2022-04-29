@@ -5,6 +5,19 @@ import { Typography } from "../../components/Typography";
 import styles from "./StartSection.module.css";
 
 export function StartSection(): React.ReactElement {
+  const [defaultSize, setDefaultSize] = useState(true);
+  const counter = () => {
+    defaultSize ? setSize({ x: 1200 }) : setSize({ x: 0 });
+    setDefaultSize(!defaultSize);
+  };
+
+  useEffect(() => {
+    const timeoutID = setTimeout(() => counter(), 10000);
+    return () => {
+      clearTimeout(timeoutID);
+    };
+  }, [defaultSize]);
+
   const [size, setSize] = useState({ x: 400 });
   const handleClick = (mouseDownEvent: any) => {
     const position = { x: mouseDownEvent.pageX };
@@ -21,18 +34,6 @@ export function StartSection(): React.ReactElement {
     document.body.addEventListener("mousemove", onMouseMove);
     document.body.addEventListener("mouseup", onMouseUp);
   };
-
-  // const [number, setNumber] = useState(1);
-  // const counter = () => {
-  //   number > 0 && number < 2 ? setNumber(number + 1) : setNumber(1);
-  // };
-
-  // useEffect(() => {
-  //   const timeoutID = setTimeout(() => counter(), 3000);
-  //   return () => {
-  //     clearTimeout(timeoutID);
-  //   };
-  // }, [number]);
 
   return (
     <section className={styles.startSection} id="start">
@@ -51,7 +52,10 @@ export function StartSection(): React.ReactElement {
         </div> */}
       </header>
       <div className={styles.container}>
-        <div style={{ width: size.x }}>
+        <div
+          className={size.x === 0 || size.x === 1200 ? styles.active : ""}
+          style={{ width: size.x }}
+        >
           <div>
             <Typography variant="h1" color="grey0">
               Gwarantujemy

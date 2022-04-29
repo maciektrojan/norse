@@ -27,9 +27,3 @@
 .servicesSection button {
   margin-top: 24px;
 }
-
-.servicesSection > div:nth-child(1) img,
-.servicesSection > div:nth-child(2) img,
-.servicesSection > div:nth-child(3) img {
-  transform: translateX(-80px);
-}
