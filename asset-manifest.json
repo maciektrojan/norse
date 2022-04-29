@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/norse/static/css/main.f3e61719.css",
-    "main.js": "/norse/static/js/main.77b7e627.js",
+    "main.css": "/norse/static/css/main.fac85133.css",
+    "main.js": "/norse/static/js/main.1c60e850.js",
     "static/media/1.1.png": "/norse/static/media/1.1.a2bdd205fe68a1aaecbb.png",
     "static/media/1.2.png": "/norse/static/media/1.2.d6a3b39a504ecb5a516b.png",
-    "static/media/2.1.png": "/norse/static/media/2.1.b622e7cfa6221d6203bf.png",
-    "static/media/2.2.png": "/norse/static/media/2.2.33b8c4063b62d7e0965d.png",
-    "static/media/2.4.png": "/norse/static/media/2.4.6d355ed9b9efd4af539f.png",
-    "static/media/2.3.png": "/norse/static/media/2.3.bdc976f21be9a5a760c7.png",
-    "static/media/3.1.png": "/norse/static/media/3.1.77bb4f0a861801038cc8.png",
+    "static/media/3.1.png": "/norse/static/media/3.1.3280dac7543dde353ea7.png",
+    "static/media/2.2.png": "/norse/static/media/2.2.36858c2ef0ed9973ae02.png",
+    "static/media/2.1.png": "/norse/static/media/2.1.b2990b0a27b024b5ceee.png",
+    "static/media/2.4.png": "/norse/static/media/2.4.db70a46698e33c1c2a5f.png",
+    "static/media/2.3.png": "/norse/static/media/2.3.2731ae154743d1e27a57.png",
     "static/media/Logo.svg": "/norse/static/media/Logo.36209d83207cdc922d4f9edc9426b28a.svg",
     "index.html": "/norse/index.html",
-    "main.f3e61719.css.map": "/norse/static/css/main.f3e61719.css.map",
-    "main.77b7e627.js.map": "/norse/static/js/main.77b7e627.js.map"
+    "main.fac85133.css.map": "/norse/static/css/main.fac85133.css.map",
+    "main.1c60e850.js.map": "/norse/static/js/main.1c60e850.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3e61719.css",
-    "static/js/main.77b7e627.js"
+    "static/css/main.fac85133.css",
+    "static/js/main.1c60e850.js"
   ]
 }
