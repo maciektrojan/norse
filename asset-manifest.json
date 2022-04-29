@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/norse/static/css/main.4f4593c9.css",
-    "main.js": "/norse/static/js/main.f1d97fb2.js",
-    "static/media/2.jpeg": "/norse/static/media/2.07c784067167c669988c.jpeg",
-    "static/media/1.jpeg": "/norse/static/media/1.eb422898a56665b25e38.jpeg",
+    "main.css": "/norse/static/css/main.f3e61719.css",
+    "main.js": "/norse/static/js/main.77b7e627.js",
+    "static/media/1.1.png": "/norse/static/media/1.1.a2bdd205fe68a1aaecbb.png",
+    "static/media/1.2.png": "/norse/static/media/1.2.d6a3b39a504ecb5a516b.png",
+    "static/media/2.1.png": "/norse/static/media/2.1.b622e7cfa6221d6203bf.png",
+    "static/media/2.2.png": "/norse/static/media/2.2.33b8c4063b62d7e0965d.png",
+    "static/media/2.4.png": "/norse/static/media/2.4.6d355ed9b9efd4af539f.png",
+    "static/media/2.3.png": "/norse/static/media/2.3.bdc976f21be9a5a760c7.png",
+    "static/media/3.1.png": "/norse/static/media/3.1.77bb4f0a861801038cc8.png",
     "static/media/Logo.svg": "/norse/static/media/Logo.36209d83207cdc922d4f9edc9426b28a.svg",
     "index.html": "/norse/index.html",
-    "main.4f4593c9.css.map": "/norse/static/css/main.4f4593c9.css.map",
-    "main.f1d97fb2.js.map": "/norse/static/js/main.f1d97fb2.js.map"
+    "main.f3e61719.css.map": "/norse/static/css/main.f3e61719.css.map",
+    "main.77b7e627.js.map": "/norse/static/js/main.77b7e627.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f4593c9.css",
-    "static/js/main.f1d97fb2.js"
+    "static/css/main.f3e61719.css",
+    "static/js/main.77b7e627.js"
   ]
 }
