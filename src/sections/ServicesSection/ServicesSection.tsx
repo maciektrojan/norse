@@ -75,7 +75,6 @@ export function ServicesSection(): React.ReactElement {
           <Button>Lorem ipsum</Button>
         </Container>
       </section>
-      <div className="padding" />
     </div>
   );
 }

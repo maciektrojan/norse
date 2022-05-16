@@ -1,5 +1,5 @@
 @value colors: "../colors.module.css";
-@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+@value primaryMain, grey0, grey50, grey200, grey300, grey500, grey800, grey900 from colors;
 @value navWidth: 200px;
 
 *:focus-visible {
@@ -26,7 +26,7 @@ body::before {
 
 .wrapper {
   width: calc(100% + navWidth - 48px);
-  min-width: calc(1024px + navWidth - 48px);
+  min-width: calc(768px + navWidth - 48px);
   background-color: grey200;
   transition: margin 0.4s;
 }
@@ -72,10 +72,10 @@ body::before {
 }
 
 .label {
-  text-align: right;
   margin: 12px 10px;
   border-top: 1px solid grey800;
   padding-top: 12px;
+  text-align: right;
   font-size: 9px;
   line-height: 15px;
   color: grey500;

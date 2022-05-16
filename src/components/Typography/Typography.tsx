@@ -6,15 +6,7 @@ type TypographyProps = {
   className?: string;
   variant: "h1" | "h2" | "body1" | "body2" | "body3";
   weight?: "bold";
-  color?:
-    | "primaryMain"
-    // | "error"
-    // | "warning"
-    // | "info"
-    | "grey0"
-    | "grey500"
-    | "grey800"
-    | "grey900";
+  color?: "primaryMain" | "grey0" | "grey500" | "grey800" | "grey900";
 };
 
 const variantMaping = {

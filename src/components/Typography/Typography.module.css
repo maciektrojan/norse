@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap");
 
 @value colors: "../colors.module.css";
-@value primaryMain, error, warning, info, grey0, grey500, grey800, grey900 from colors;
+@value primaryMain, grey0, grey500, grey800, grey900 from colors;
 
 body,
 a {
@@ -55,18 +55,6 @@ p {
 .color-primaryMain {
   color: primaryMain;
 }
-
-/* .color-error {
-  color: error;
-}
-
-.color-warning {
-  color: warning;
-}
-
-.color-info {
-  color: info;
-} */
 
 .color-grey0 {
   color: grey0;

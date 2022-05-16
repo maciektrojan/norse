@@ -1,0 +1,21 @@
+@value colors: "../../components/colors.module.css";
+@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+
+.reviewsSection > div:nth-child(1) {
+  overflow: hidden;
+}
+
+.reviewsSection > div:nth-child(1) > div {
+  display: flex;
+  margin-right: -24px;
+  transition: transform 0.4s;
+}
+
+.reviewsSection > div:nth-child(2) {
+  display: flex;
+  margin-top: 24px;
+}
+
+.reviewsSection button:nth-child(2) {
+  margin-left: 16px;
+}

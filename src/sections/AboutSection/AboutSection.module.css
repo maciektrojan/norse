@@ -129,3 +129,27 @@
   align-items: center;
   margin-top: 24px;
 }
+
+@media (max-width: 1024px) {
+  .aboutSection > div:nth-child(2) {
+    flex-wrap: wrap;
+    margin-top: calc(38px - 24px);
+  }
+
+  .aboutSection > div:nth-child(2) > div {
+    margin-top: 24px;
+    width: calc((100% - 24px) / 2);
+    height: 436px;
+  }
+
+  .aboutSection > div:nth-child(2) > div:nth-child(1),
+  .aboutSection > div:nth-child(2) > div:nth-child(4) {
+    background-position: 0;
+  }
+}
+
+@media (max-width: 952px) {
+  .aboutSection > div:nth-child(2) > div {
+    height: 400px;
+  }
+}

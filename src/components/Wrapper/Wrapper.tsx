@@ -28,7 +28,7 @@ export const Wrapper: React.FC = ({ children }) => {
     { id: 1, url: "start", content: "Start", icon: <HomeIcon /> },
     { id: 2, url: "about", content: "O nas", icon: <PersonIcon /> },
     { id: 3, url: "services", content: "Usługi", icon: <ConstructionIcon /> },
-    { id: 4, url: "opinions", content: "Opinie", icon: <CommentIcon /> },
+    { id: 4, url: "reviews", content: "Opinie", icon: <CommentIcon /> },
     { id: 5, url: "partners", content: "Partnerzy", icon: <PeopleIcon /> },
     { id: 6, url: "contact", content: "Kontakt", icon: <InboxIcon /> },
   ];

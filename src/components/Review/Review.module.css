@@ -1,0 +1,62 @@
+@value colors: "../../components/colors.module.css";
+@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+
+.review {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin-right: 24px;
+  padding: 16px;
+  padding-bottom: 24px;
+  width: calc(100% / 3 - 24px);
+  background-color: grey50;
+  transition: width 0.4s;
+}
+
+@media (max-width: 1024px) {
+  .review {
+    width: calc(100% / 2 - 24px);
+  }
+}
+
+.review > div {
+  display: flex;
+}
+
+.review > div > p {
+  flex-shrink: 0;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: grey200;
+  text-align: center;
+  line-height: 40px;
+  color: grey800;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row div {
+  display: flex;
+  margin-left: -1px;
+}
+
+.row svg {
+  font-size: 16px;
+  color: primaryMain;
+}
+
+.review > p {
+  margin-top: 16px;
+}
