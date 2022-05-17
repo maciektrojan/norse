@@ -34,7 +34,11 @@ export const Review: React.FC<ReviewProps> = ({
             <Typography variant="body2" weight="bold">
               {name}
             </Typography>
-            <Typography variant="body3" color="grey800">
+            <Typography
+              className={styles.place}
+              variant="body3"
+              color="grey800"
+            >
               {place}
             </Typography>
           </div>
@@ -46,7 +50,7 @@ export const Review: React.FC<ReviewProps> = ({
               <StarIcon />
               <StarIcon />
             </div>
-            <Typography variant="body3" color="grey800">
+            <Typography className={styles.date} variant="body3" color="grey800">
               {date}
             </Typography>
           </div>

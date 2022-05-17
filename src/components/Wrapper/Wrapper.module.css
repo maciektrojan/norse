@@ -26,7 +26,7 @@ body::before {
 
 .wrapper {
   width: calc(100% + navWidth - 48px);
-  min-width: calc(768px + navWidth - 48px);
+  min-width: calc(425px + navWidth - 48px);
   background-color: grey200;
   transition: margin 0.4s;
 }
@@ -81,7 +81,7 @@ body::before {
   color: grey500;
 }
 
-.wrapper a {
+.wrapper nav a {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ body::before {
   cursor: pointer;
 }
 
-.wrapper a:focus-visible {
+.wrapper nav a:focus-visible {
   outline-offset: -1.5px;
 }
 
@@ -111,7 +111,7 @@ body::before {
   background-color: grey0;
 }
 
-.wrapper a div {
+.wrapper nav a div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +157,7 @@ body::before {
 .container::before {
   content: "";
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -167,7 +167,7 @@ body::before {
 }
 
 .open .container::before {
-  opacity: 0.2;
+  opacity: 0.25;
   visibility: visible;
   transition: opacity 0.4s;
 }
@@ -176,4 +176,35 @@ body::before {
   margin: 0 auto;
   padding: 0 40px;
   max-width: 1200px;
+}
+
+.container footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container footer div {
+  display: flex;
+}
+
+.container footer a {
+  margin-right: 16px;
+}
+
+.container footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container main {
+    padding: 0 24px;
+  }
+
+  .container footer {
+    flex-direction: column;
+  }
+
+  .container footer div {
+    margin-bottom: 8px;
+  }
 }

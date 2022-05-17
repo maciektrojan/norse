@@ -1,18 +1,29 @@
 import React, { useEffect, useState } from "react";
-import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
 import { ReactComponent as Logo } from "../../components/Logo.svg";
 import { Typography } from "../../components/Typography";
 import styles from "./StartSection.module.css";
 
 export function StartSection(): React.ReactElement {
+  // początek
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 1024px)").matches
+  );
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 1024px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+  // koniec
+
   const [defaultSize, setDefaultSize] = useState(true);
   const counter = () => {
-    defaultSize ? setSize({ x: 1200 }) : setSize({ x: 0 });
+    matches && (defaultSize ? setSize({ x: 896 }) : setSize({ x: 0 }));
+    !matches && (defaultSize ? setSize({ x: 1200 }) : setSize({ x: 0 }));
     setDefaultSize(!defaultSize);
   };
 
   useEffect(() => {
-    const timeoutID = setTimeout(() => counter(), 10000);
+    const timeoutID = setTimeout(() => counter(), 20000);
     return () => {
       clearTimeout(timeoutID);
     };
@@ -36,43 +47,32 @@ export function StartSection(): React.ReactElement {
   };
 
   return (
-    <section className={styles.startSection} id="start">
-      <header>
-        <Logo />
-        {/* <div>
-          <a href="tel:123-456-789">
-            <Typography variant="body2">+48 123 456 789</Typography>
-          </a>
-          <a href="mailto:lorem@ipsum.com">
-            <Typography variant="body2">lorem@ipsum.com</Typography>
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <FacebookSharpIcon />
-          </a>
-        </div> */}
-      </header>
-      <div className={styles.container}>
-        <div
-          className={size.x === 0 || size.x === 1200 ? styles.active : ""}
-          style={{ width: size.x }}
-        >
-          <div>
-            <Typography variant="h1" color="grey0">
-              Gwarantujemy
-              <br />
-              <span className={size.x > 600 ? styles.active : ""}></span>
-            </Typography>
-            {/* <div className={styles.test}>
-              <Typography variant="body2" color="grey0">
-                Test
+    <div id="start" className={size.x > 600 ? styles.active : ""}>
+      <div className="padding" />
+      <section className={styles.startSection}>
+        <div className={styles.container}>
+          <div
+            className={
+              size.x === 0 || size.x === 896 || size.x === 1200
+                ? styles.transition
+                : ""
+            }
+            style={{ width: size.x }}
+          >
+            <Logo />
+            <div>
+              <Typography variant="h1" color="grey0">
+                Gwarantujemy
+                <br />
+                <span />
               </Typography>
-            </div> */}
-          </div>
-          <div onMouseDown={handleClick}>
-            <button tabIndex={-1}></button>
+            </div>
+            <div onMouseDown={handleClick}>
+              <button tabIndex={-1}></button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

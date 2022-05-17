@@ -12,12 +12,6 @@
   transition: width 0.4s;
 }
 
-@media (max-width: 1024px) {
-  .review {
-    width: calc(100% / 2 - 24px);
-  }
-}
-
 .review > div {
   display: flex;
 }
@@ -49,7 +43,7 @@
 
 .row div {
   display: flex;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .row svg {
@@ -59,4 +53,35 @@
 
 .review > p {
   margin-top: 16px;
+}
+
+@media (max-width: 1024px) {
+  .review {
+    width: calc(100% / 2 - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .review {
+    margin-right: 16px;
+    width: calc(100% / 2 - 16px);
+  }
+
+  .row div {
+    margin-bottom: 2px;
+  }
+
+  .row svg {
+    font-size: 14px;
+  }
+
+  .place,
+  .date {
+    display: none;
+  }
+
+  .review > p {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
 }

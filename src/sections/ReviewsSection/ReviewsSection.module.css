@@ -2,20 +2,57 @@
 @value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
 
 .reviewsSection > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.reviewsSection > div:nth-child(1) p:nth-child(1) {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: primaryMain;
+  line-height: 16px;
+}
+
+.reviewsSection > div:nth-child(1) p:nth-child(2) {
+  margin-left: 24px;
+}
+
+.reviewsSection a {
+  color: primaryMain;
+}
+
+.reviewsSection a:hover {
+  text-decoration: underline;
+}
+
+.reviewsSection > div:nth-child(2) {
+  margin-top: 40px;
   overflow: hidden;
 }
 
-.reviewsSection > div:nth-child(1) > div {
+.reviewsSection > div:nth-child(2) > div {
   display: flex;
   margin-right: -24px;
   transition: transform 0.4s;
 }
 
-.reviewsSection > div:nth-child(2) {
+.reviewsSection > div:nth-child(3) {
   display: flex;
   margin-top: 24px;
 }
 
 .reviewsSection button:nth-child(2) {
   margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .reviewsSection > div:nth-child(1) p:nth-child(2) {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .reviewsSection > div:nth-child(2) > div {
+    margin-right: -16px;
+  }
 }

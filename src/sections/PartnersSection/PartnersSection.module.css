@@ -1,6 +1,53 @@
 @value colors: "../../components/colors.module.css";
 @value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
 
-.partnersSection {
-  height: 50vh;
+.partnersSection > div {
+  border-top: 1px solid grey300;
+  border-bottom: 1px solid grey300;
+  width: 100%;
+  height: 80px;
+  background-color: grey50;
+  overflow: hidden;
+}
+
+.partnersSection > div > div {
+  display: flex;
+  height: 100%;
+  animation: test 30s linear infinite;
+}
+
+@keyframes test {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.partnersSection > div > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 40px;
+  width: calc(100% / 3 - 40px);
+  /* filter: grayscale(1);
+  transition: filter 0.2s;
+  cursor: pointer; */
+}
+
+/* .partnersSection > div > div > div:hover {
+  filter: grayscale(0);
+} */
+
+.partnersSection > div > div > div img {
+  width: 100%;
+  max-width: 200px;
+}
+
+@media (max-width: 1024px) {
+  .partnersSection > div > div > div {
+    width: calc(100% / 2 - 40px);
+  }
 }

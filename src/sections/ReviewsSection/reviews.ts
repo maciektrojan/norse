@@ -10,38 +10,37 @@ type Review = {
 export const reviews: Review[] = [
   {
     id: 1,
-    avatar: "PN",
-    name: "Piotr Nowak",
-    place: "Kraków",
-    date: "11 maja 2022",
+    avatar: "M",
+    name: "Mariusz",
+    place: "Bilsko",
+    date: "4 grudnia 2020",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Pełen profesjonalizm i super podejście do klienta. Odpowiada wyczerpująco na każde pytanie. Wymarzony fachowiec.",
   },
   {
     id: 2,
-    avatar: "PN",
-    name: "Piotr Nowak",
-    place: "Kraków",
-    date: "11 maja 2022",
+    avatar: "A",
+    name: "Andrzej",
+    place: "Bochnia",
+    date: "22 września 2020",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Profesjonalna robota, dobre doradztwo, szybki czas realizacji. Polecam serdecznie.",
   },
   {
     id: 3,
-    avatar: "PN",
-    name: "Piotr Nowak",
-    place: "Kraków",
-    date: "11 maja 2022",
+    avatar: "M",
+    name: "Maria",
+    place: "Bochnia",
+    date: "2 września 2020",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Bardzo szybka wycena i szybki termin. Fachowiec był słowny, bardzo dobrze wykonał zleconą pracę.",
   },
   {
     id: 4,
-    avatar: "PN",
-    name: "Piotr Nowak",
+    avatar: "R",
+    name: "Rafał",
     place: "Kraków",
-    date: "11 maja 2022",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "26 sierpnia 2020",
+    content: "Wyjątkowo tania usługa jak na wiele godzin pracy. Polecam!",
   },
 ];

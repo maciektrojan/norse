@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../../components/Button";
 import { Review } from "../../components/Review";
+import { Typography } from "../../components/Typography";
 import { reviews } from "./reviews";
 import styles from "./ReviewsSection.module.css";
 
 export function ReviewsSection(): React.ReactElement {
+  // początek
   const [matches, setMatches] = useState(
     window.matchMedia("(max-width: 1024px)").matches
   );
@@ -13,6 +15,7 @@ export function ReviewsSection(): React.ReactElement {
       .matchMedia("(max-width: 1024px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
+  // koniec
 
   const [number, setNumber] = useState(0);
   const handlePrevious = () => {
@@ -28,6 +31,22 @@ export function ReviewsSection(): React.ReactElement {
     <div id="reviews">
       <div className="padding" />
       <section className={styles.reviewsSection}>
+        <div>
+          <Typography variant="body3" weight="bold" color="grey0">
+            Opinie
+          </Typography>
+          <Typography variant="body2" color="grey800">
+            Sprawdź więcej opinii naszych klientów w serwisie{" "}
+            <a
+              href="https://fixly.pl/profil/of9ASx1U"
+              target="_blank"
+              rel="noreferrer"
+              tabIndex={-1}
+            >
+              Fixly
+            </a>
+          </Typography>
+        </div>
         <div>
           <div
             style={

@@ -48,13 +48,9 @@ export function AboutSection(): React.ReactElement {
             <Typography variant="h2">
               Oferujemy szereg usług instalacyjnych
             </Typography>
-            {/* <Typography variant="body2" color="grey800">
+            <Typography variant="body2" color="grey800">
               Zapewniamy kompleksowe wykonanie instalacji od <b>projektu</b>{" "}
               przez <b>odbiór</b> po <b>serwis</b>, w tym:
-            </Typography> */}
-            <Typography variant="body2" color="grey800">
-              Zapewniamy kompleksowe wykonanie instalacji od projektu przez
-              odbiór po serwis, w tym:
             </Typography>
           </div>
         </div>

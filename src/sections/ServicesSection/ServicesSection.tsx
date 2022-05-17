@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { Button } from "../../components/Button";
 import { Container } from "../../components/Container";
 import { Typography } from "../../components/Typography";
@@ -10,7 +11,7 @@ export function ServicesSection(): React.ReactElement {
     <div id="services">
       <div className="padding" />
       <section className={styles.servicesSection}>
-        <Container src={require("../../images/3.1.png")}>
+        <Container src={require("../../images/3.1.png")} alt="heat pump">
           <Typography variant="body3" weight="bold" color="grey0">
             Usługi
           </Typography>
@@ -32,10 +33,24 @@ export function ServicesSection(): React.ReactElement {
               );
             })}
           </ul>
-          <Button>Lorem ipsum</Button>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            activeClass={styles.active}
+            href=""
+            tabIndex={-1}
+          >
+            <Button>Zapytaj o wycenę</Button>
+          </Link>
         </Container>
-        <Container src={require("../../images/3.1.png")} direction="reverse">
-          <Typography variant="h1">Technika grzewcza</Typography>
+        <Container
+          src={require("../../images/3.2.png")}
+          alt="boiler room"
+          direction="reverse"
+        >
+          <Typography variant="h1">Technika grzewcza</Typography>
           <Typography variant="body2" color="grey800">
             System ogrzewania stanowi niezbędny element każdego budynku.
             Od sposobu jego wykonania zależy komfort termiczny wnętrza domu oraz
@@ -52,10 +67,20 @@ export function ServicesSection(): React.ReactElement {
               );
             })}
           </ul>
-          <Button>Lorem ipsum</Button>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            activeClass={styles.active}
+            href=""
+            tabIndex={-1}
+          >
+            <Button>Zapytaj o wycenę</Button>
+          </Link>
         </Container>
-        <Container src={require("../../images/3.1.png")}>
-          <Typography variant="h1">Technika sanitarna</Typography>
+        <Container src={require("../../images/3.3.png")} alt="bathroom">
+          <Typography variant="h1">Technika sanitarna</Typography>
           <Typography variant="body2" color="grey800">
             Ceramika, akcesoria, a także złożone instalacje, które kryją się
             w ścianach i pod ziemią. Od jakości ich wykonania zależy higiena,
@@ -72,7 +97,17 @@ export function ServicesSection(): React.ReactElement {
               );
             })}
           </ul>
-          <Button>Lorem ipsum</Button>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            activeClass={styles.active}
+            href=""
+            tabIndex={-1}
+          >
+            <Button>Zapytaj o wycenę</Button>
+          </Link>
         </Container>
       </section>
     </div>

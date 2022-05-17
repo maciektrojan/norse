@@ -12,9 +12,9 @@ function App(): React.ReactElement {
     <Wrapper>
       <StartSection />
       <AboutSection />
+      <PartnersSection />
       <ServicesSection />
       <ReviewsSection />
-      <PartnersSection />
       <ContactSection />
     </Wrapper>
   );

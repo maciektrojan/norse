@@ -2,5 +2,70 @@
 @value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
 
 .contactSection {
-  height: 50vh;
+  padding: 40px;
+  background-color: grey50;
+}
+
+.contactSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.contactSection form > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.contactSection form > div > div {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 12px);
+}
+
+.contactSection form > div > div input:nth-child(2) {
+  margin-top: 24px;
+}
+
+.contactSection input,
+.contactSection textarea {
+  all: unset;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: grey200;
+  font-family: "Mulish", sans-serif;
+  font-size: 0.875rem;
+  line-height: 16px;
+  color: grey900;
+}
+
+.contactSection textarea {
+  width: calc(50% - 12px);
+}
+
+.contactSection input::placeholder,
+.contactSection textarea::placeholder {
+  color: grey500;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 40px 24px;
+  }
+
+  .contactSection form > div {
+    flex-direction: column;
+  }
+
+  .contactSection form > div > div {
+    width: 100%;
+  }
+
+  .contactSection textarea {
+    margin-top: 24px;
+    width: 100%;
+  }
 }

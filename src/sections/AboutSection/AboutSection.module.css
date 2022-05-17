@@ -153,3 +153,35 @@
     height: 400px;
   }
 }
+
+@media (max-width: 768px) {
+  .aboutSection > div:nth-child(1) {
+    padding: 0 16px;
+  }
+
+  .aboutSection > div:nth-child(1) > div h2 {
+    font-size: 1.25rem;
+  }
+
+  .aboutSection > div:nth-child(1) > div p {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .aboutSection > div:nth-child(2) > div {
+    margin-top: 16px;
+    padding: 24px 16px;
+    width: calc((100% - 16px) / 2);
+    height: 328px;
+  }
+
+  .aboutSection > div:nth-child(2) h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .aboutSection > div:nth-child(2) > div {
+    height: 281px;
+  }
+}

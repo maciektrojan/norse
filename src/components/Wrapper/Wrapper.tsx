@@ -27,9 +27,9 @@ export const Wrapper: React.FC = ({ children }) => {
   const links: Link[] = [
     { id: 1, url: "start", content: "Start", icon: <HomeIcon /> },
     { id: 2, url: "about", content: "O nas", icon: <PersonIcon /> },
-    { id: 3, url: "services", content: "Usługi", icon: <ConstructionIcon /> },
-    { id: 4, url: "reviews", content: "Opinie", icon: <CommentIcon /> },
-    { id: 5, url: "partners", content: "Partnerzy", icon: <PeopleIcon /> },
+    { id: 3, url: "partners", content: "Partnerzy", icon: <PeopleIcon /> },
+    { id: 4, url: "services", content: "Usługi", icon: <ConstructionIcon /> },
+    { id: 5, url: "reviews", content: "Opinie", icon: <CommentIcon /> },
     { id: 6, url: "contact", content: "Kontakt", icon: <InboxIcon /> },
   ];
 
@@ -65,7 +65,40 @@ export const Wrapper: React.FC = ({ children }) => {
         })}
       </nav>
       <div className={styles.container}>
-        <main>{children}</main>
+        <main>
+          {children}
+          <div className="padding" />
+          <footer>
+            <div>
+              <a href="tel:123-456-789" tabIndex={-1}>
+                <Typography variant="body3">+48 123 456 789</Typography>
+              </a>
+              <a href="mailto:lorem@ipsum.com" tabIndex={-1}>
+                <Typography variant="body3">lorem@ipsum.com</Typography>
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                tabIndex={-1}
+              >
+                <Typography variant="body3">Facebook</Typography>
+              </a>
+              <a
+                href="https://fixly.pl/profil/of9ASx1U"
+                target="_blank"
+                rel="noreferrer"
+                tabIndex={-1}
+              >
+                <Typography variant="body3">Fixly</Typography>
+              </a>
+            </div>
+            <Typography variant="body3">
+              © 2022 Norse. Wszelkie prawa zastrzeżone
+            </Typography>
+          </footer>
+          <div className="padding" />
+        </main>
       </div>
     </div>
   );
