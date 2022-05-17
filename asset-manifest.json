@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/norse/static/css/main.35af5abe.css",
-    "main.js": "/norse/static/js/main.6e2851e6.js",
+    "main.css": "/norse/static/css/main.0ae30200.css",
+    "main.js": "/norse/static/js/main.eddf4fb4.js",
     "static/media/1.1.png": "/norse/static/media/1.1.a2bdd205fe68a1aaecbb.png",
     "static/media/1.2.png": "/norse/static/media/1.2.d6a3b39a504ecb5a516b.png",
     "static/media/3.1.png": "/norse/static/media/3.1.3280dac7543dde353ea7.png",
@@ -13,11 +13,11 @@
     "static/media/2.3.png": "/norse/static/media/2.3.2731ae154743d1e27a57.png",
     "static/media/Logo.svg": "/norse/static/media/Logo.36209d83207cdc922d4f9edc9426b28a.svg",
     "index.html": "/norse/index.html",
-    "main.35af5abe.css.map": "/norse/static/css/main.35af5abe.css.map",
-    "main.6e2851e6.js.map": "/norse/static/js/main.6e2851e6.js.map"
+    "main.0ae30200.css.map": "/norse/static/css/main.0ae30200.css.map",
+    "main.eddf4fb4.js.map": "/norse/static/js/main.eddf4fb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.35af5abe.css",
-    "static/js/main.6e2851e6.js"
+    "static/css/main.0ae30200.css",
+    "static/js/main.eddf4fb4.js"
   ]
 }
