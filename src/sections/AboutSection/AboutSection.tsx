@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import EastIcon from "@mui/icons-material/East";
 import ExploreIcon from "@mui/icons-material/Explore";
@@ -57,8 +58,13 @@ export function AboutSection(): React.ReactElement {
         <div>
           {items.map((item) => {
             return (
-              <div
+              <Link
                 key={item.id}
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+                href=""
                 className={item.id === number ? styles.active : ""}
                 onMouseOver={() => {
                   handleHover(item);
@@ -74,7 +80,7 @@ export function AboutSection(): React.ReactElement {
                     <EastIcon />
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

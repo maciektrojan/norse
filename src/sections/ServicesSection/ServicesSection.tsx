@@ -38,7 +38,6 @@ export function ServicesSection(): React.ReactElement {
             spy={true}
             smooth={true}
             duration={500}
-            activeClass={styles.active}
             href=""
             tabIndex={-1}
           >
@@ -72,7 +71,6 @@ export function ServicesSection(): React.ReactElement {
             spy={true}
             smooth={true}
             duration={500}
-            activeClass={styles.active}
             href=""
             tabIndex={-1}
           >
@@ -102,7 +100,6 @@ export function ServicesSection(): React.ReactElement {
             spy={true}
             smooth={true}
             duration={500}
-            activeClass={styles.active}
             href=""
             tabIndex={-1}
           >

@@ -35,7 +35,7 @@
   padding-bottom: calc(4px / 2 + 4px);
 }
 
-.aboutSection > div:nth-child(2) > div {
+.aboutSection a {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,27 +54,33 @@
   cursor: pointer;
 }
 
-.aboutSection > div:nth-child(2) > div:nth-child(1) {
+.aboutSection a:nth-child(1) {
   background-image: url(../../images/2.1.png);
   background-position: -11px;
 }
 
-.aboutSection > div:nth-child(2) > div:nth-child(2) {
+.aboutSection a:nth-child(2) {
   background-image: url(../../images/2.2.png);
   background-position: 0;
 }
 
-.aboutSection > div:nth-child(2) > div:nth-child(3) {
+.aboutSection a:nth-child(3) {
   background-image: url(../../images/2.3.png);
   background-position: 0;
 }
 
-.aboutSection > div:nth-child(2) > div:nth-child(4) {
+.aboutSection a:nth-child(4) {
   background-image: url(../../images/2.4.png);
   background-position: -11px;
 }
 
-.aboutSection > div:nth-child(2) > div::before {
+.aboutSection a:focus-visible {
+  outline-offset: 2px;
+  outline-width: 2px;
+  overflow: hidden;
+}
+
+.aboutSection a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -110,12 +116,12 @@
   }
 }
 
-.aboutSection > div:nth-child(2) > div > svg {
+.aboutSection a > svg {
   padding: 8px;
   background-color: primaryMain;
 }
 
-.aboutSection > div:nth-child(2) > div > div {
+.aboutSection a > div {
   position: relative;
 }
 
@@ -123,7 +129,7 @@
   width: 0;
 }
 
-.aboutSection > div:nth-child(2) > div > div > div {
+.aboutSection a > div > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,20 +142,20 @@
     margin-top: calc(38px - 24px);
   }
 
-  .aboutSection > div:nth-child(2) > div {
+  .aboutSection a {
     margin-top: 24px;
     width: calc((100% - 24px) / 2);
     height: 436px;
   }
 
-  .aboutSection > div:nth-child(2) > div:nth-child(1),
-  .aboutSection > div:nth-child(2) > div:nth-child(4) {
+  .aboutSection a:nth-child(1),
+  .aboutSection a:nth-child(4) {
     background-position: 0;
   }
 }
 
 @media (max-width: 952px) {
-  .aboutSection > div:nth-child(2) > div {
+  .aboutSection a {
     height: 400px;
   }
 }
@@ -168,7 +174,7 @@
     line-height: 1.125rem;
   }
 
-  .aboutSection > div:nth-child(2) > div {
+  .aboutSection a {
     margin-top: 16px;
     padding: 24px 16px;
     width: calc((100% - 16px) / 2);
@@ -181,7 +187,7 @@
 }
 
 @media (max-width: 425px) {
-  .aboutSection > div:nth-child(2) > div {
+  .aboutSection a {
     height: 281px;
   }
 }

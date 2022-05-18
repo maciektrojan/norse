@@ -33,7 +33,7 @@
 
 .reviewsSection > div:nth-child(2) > div {
   display: flex;
-  margin-right: -24px;
+  margin-right: -16px;
   transition: transform 0.4s;
 }
 
@@ -50,9 +50,5 @@
   .reviewsSection > div:nth-child(1) p:nth-child(2) {
     font-size: 0.75rem;
     line-height: 1.125rem;
-  }
-
-  .reviewsSection > div:nth-child(2) > div {
-    margin-right: -16px;
   }
 }

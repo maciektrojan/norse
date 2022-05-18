@@ -85,7 +85,7 @@ export const Wrapper: React.FC = ({ children }) => {
                 <Typography variant="body3">Facebook</Typography>
               </a>
               <a
-                href="https://fixly.pl/profil/of9ASx1U"
+                href="https://fixly.pl"
                 target="_blank"
                 rel="noreferrer"
                 tabIndex={-1}

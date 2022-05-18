@@ -4,6 +4,7 @@
 .startSection {
   margin: 0 -16px;
   padding: 0 16px;
+  padding-top: 48px;
   overflow: hidden;
 }
 
@@ -145,7 +146,12 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .stupidSolution {
+    display: none;
+    min-width: 672px;
+  }
+
+  /* .container {
     background-position: center;
     background-size: calc(768px - 48px - 24px * 2);
   }
@@ -206,5 +212,5 @@
 
   .container > div > div:nth-child(3) {
     display: none;
-  }
+  } */
 }

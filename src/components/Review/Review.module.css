@@ -4,10 +4,10 @@
 .review {
   flex-shrink: 0;
   box-sizing: border-box;
-  margin-right: 24px;
+  margin-right: 16px;
   padding: 16px;
   padding-bottom: 24px;
-  width: calc(100% / 3 - 24px);
+  width: calc(100% / 3 - 16px);
   background-color: grey50;
   transition: width 0.4s;
 }
@@ -57,16 +57,11 @@
 
 @media (max-width: 1024px) {
   .review {
-    width: calc(100% / 2 - 24px);
+    width: calc(100% / 2 - 16px);
   }
 }
 
 @media (max-width: 768px) {
-  .review {
-    margin-right: 16px;
-    width: calc(100% / 2 - 16px);
-  }
-
   .row div {
     margin-bottom: 2px;
   }

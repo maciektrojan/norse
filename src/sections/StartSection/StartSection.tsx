@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import clsx from "clsx";
 import { ReactComponent as Logo } from "../../components/Logo.svg";
 import { Typography } from "../../components/Typography";
 import styles from "./StartSection.module.css";
@@ -47,10 +48,11 @@ export function StartSection(): React.ReactElement {
   };
 
   return (
-    <div id="start" className={size.x > 600 ? styles.active : ""}>
-      <div className="padding" />
-      <section className={styles.startSection}>
-        <div className={styles.container}>
+    <div className={styles.stupidSolution}>
+      <section id="start" className={styles.startSection}>
+        <div
+          className={clsx(styles.container, size.x > 600 ? styles.active : "")}
+        >
           <div
             className={
               size.x === 0 || size.x === 896 || size.x === 1200

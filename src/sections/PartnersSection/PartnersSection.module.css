@@ -13,10 +13,10 @@
 .partnersSection > div > div {
   display: flex;
   height: 100%;
-  animation: test 30s linear infinite;
+  animation: slider 30s linear infinite;
 }
 
-@keyframes test {
+@keyframes slider {
   0% {
     transform: translateX(0);
   }
