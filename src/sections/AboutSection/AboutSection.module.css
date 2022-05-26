@@ -75,7 +75,7 @@
 }
 
 .aboutSection a:focus-visible {
-  outline-offset: 2px;
+  outline-offset: 4px;
   outline-width: 2px;
   overflow: hidden;
 }

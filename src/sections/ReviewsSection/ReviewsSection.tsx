@@ -1,21 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "../../components/Button";
 import { Review } from "../../components/Review";
 import { Typography } from "../../components/Typography";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import { reviews } from "./reviews";
 import styles from "./ReviewsSection.module.css";
 
 export function ReviewsSection(): React.ReactElement {
-  // początek
-  const [matches, setMatches] = useState(
-    window.matchMedia("(max-width: 1024px)").matches
-  );
-  useEffect(() => {
-    window
-      .matchMedia("(max-width: 1024px)")
-      .addEventListener("change", (e) => setMatches(e.matches));
-  }, []);
-  // koniec
+  const { width } = useWindowDimensions();
 
   const [number, setNumber] = useState(0);
   const handlePrevious = () => {
@@ -25,7 +17,7 @@ export function ReviewsSection(): React.ReactElement {
     setNumber(number + 1);
   };
 
-  !matches && number === 2 && setNumber(1);
+  width > 1024 && number === 2 && setNumber(1);
 
   return (
     <div id="reviews">
@@ -50,9 +42,9 @@ export function ReviewsSection(): React.ReactElement {
         <div>
           <div
             style={
-              matches
-                ? { transform: `translateX(calc(-100% / 2 * ${number}))` }
-                : { transform: `translateX(calc(-100% / 3 * ${number}))` }
+              width > 1024
+                ? { transform: `translateX(calc(-100% / 3 * ${number}))` }
+                : { transform: `translateX(calc(-100% / 2 * ${number}))` }
             }
           >
             {reviews.map((review) => {
@@ -79,9 +71,9 @@ export function ReviewsSection(): React.ReactElement {
           <Button
             onClick={handleNext}
             disabled={
-              matches && number > 1
+              width > 1024 && number === 1
                 ? true
-                : !matches && number > 0
+                : width <= 1024 && number === 2
                 ? true
                 : false
             }
