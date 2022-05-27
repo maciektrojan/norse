@@ -12,8 +12,8 @@
   font-weight: 600;
   line-height: 16px;
   color: grey0;
-  cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
 }
 
 /* .button-contained:hover {
@@ -21,10 +21,10 @@
   color: grey900;
 } */
 
-/* roboczo */
 .button-contained:disabled {
   background-color: grey300;
   color: grey500;
+  cursor: default;
 }
 
 .button-outlined {
@@ -46,8 +46,7 @@
   height: initial;
   background-color: transparent;
   text-align: left;
-  /* color: primaryMain; */
-  color: grey900;
+  color: primaryMain;
 }
 
 @media (max-width: 768px) {
