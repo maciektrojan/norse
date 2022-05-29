@@ -97,12 +97,14 @@ body::before {
   outline-offset: -1.5px;
 }
 
-.wrapper .active {
+.wrapper .active,
+.wrapper .fix:last-child {
   background-color: grey800;
   color: grey0;
 }
 
-.wrapper .active::before {
+.wrapper .active::before,
+.wrapper .fix:last-child::before {
   content: "";
   position: absolute;
   top: 0;
@@ -110,6 +112,15 @@ body::before {
   width: 2px;
   height: 100%;
   background-color: grey0;
+}
+
+.wrapper .fix {
+  background-color: transparent;
+  color: grey500;
+}
+
+.wrapper .fix::before {
+  content: initial;
 }
 
 .wrapper nav a div {
@@ -155,7 +166,7 @@ body::before {
   margin-left: navWidth;
 }
 
-.container::before {
+/* .container::before {
   content: "";
   position: fixed;
   z-index: 3;
@@ -165,7 +176,7 @@ body::before {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s, visibility 0s 0.4s;
-}
+} */
 
 .open .container::before {
   opacity: 0.25;

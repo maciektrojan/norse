@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CommentIcon from "@mui/icons-material/Comment";
@@ -9,6 +9,7 @@ import PeopleIcon from "@mui/icons-material/People";
 import PersonIcon from "@mui/icons-material/Person";
 import clsx from "clsx";
 import { Typography } from "../Typography";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import styles from "./Wrapper.module.css";
 
 export const Wrapper: React.FC = ({ children }) => {
@@ -17,11 +18,23 @@ export const Wrapper: React.FC = ({ children }) => {
     setOpen(!open);
   };
 
+  const { windowHeight } = useWindowDimensions();
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScroll(window.scrollY);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const bottom = windowHeight + scroll === document.body.scrollHeight;
+
   type Link = {
     id: number;
     url: string;
     content: string;
-    icon?: React.ReactElement;
+    icon: React.ReactElement;
   };
 
   const links: Link[] = [
@@ -48,11 +61,12 @@ export const Wrapper: React.FC = ({ children }) => {
           return (
             <Link
               key={link.id}
+              className={bottom ? styles.fix : ""}
+              activeClass={styles.active}
               to={link.url}
               spy={true}
               smooth={true}
               duration={500}
-              activeClass={styles.active}
               href=""
             >
               <Typography variant="body3">{link.content}</Typography>

@@ -5,7 +5,7 @@ import styles from "./Container.module.css";
 type ContainerProps = {
   className?: string;
   src: string;
-  alt?: string;
+  alt: string;
   direction?: "reverse";
 };
 

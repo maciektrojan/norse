@@ -6,7 +6,7 @@ import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import styles from "./StartSection.module.css";
 
 export function StartSection(): React.ReactElement {
-  const { width } = useWindowDimensions();
+  const { windowWidth } = useWindowDimensions();
 
   // const [defaultSize, setDefaultSize] = useState(true);
   // const counter = () => {
@@ -43,11 +43,11 @@ export function StartSection(): React.ReactElement {
   size.x > 1200 && setSize({ x: 1200 });
 
   const large = 1200 / 2;
-  const medium = (width - 48 - 40 * 2) / 2;
+  const medium = (windowWidth - 48 - 40 * 2) / 2;
 
   const parentElementClassName = clsx(
     styles.container,
-    width > 1200 + 48 + 40 * 2
+    windowWidth > 1200 + 48 + 40 * 2
       ? size.x > large && styles.active
       : size.x > medium && styles.active
   );

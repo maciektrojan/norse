@@ -12,7 +12,7 @@ export function AboutSection(): React.ReactElement {
   type Item = {
     id: number;
     content: string;
-    icon?: React.ReactElement;
+    icon: React.ReactElement;
   };
 
   const items: Item[] = [
@@ -60,12 +60,12 @@ export function AboutSection(): React.ReactElement {
             return (
               <Link
                 key={item.id}
+                className={item.id === number ? styles.active : ""}
                 to="contact"
                 spy={true}
                 smooth={true}
                 duration={500}
                 href=""
-                className={item.id === number ? styles.active : ""}
                 onMouseOver={() => {
                   handleHover(item);
                 }}

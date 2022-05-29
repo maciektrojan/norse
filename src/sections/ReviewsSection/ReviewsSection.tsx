@@ -7,7 +7,7 @@ import { reviews } from "./reviews";
 import styles from "./ReviewsSection.module.css";
 
 export function ReviewsSection(): React.ReactElement {
-  const { width } = useWindowDimensions();
+  const { windowWidth } = useWindowDimensions();
 
   const [number, setNumber] = useState(0);
   const handlePrevious = () => {
@@ -17,7 +17,7 @@ export function ReviewsSection(): React.ReactElement {
     setNumber(number + 1);
   };
 
-  width > 1024 && number === 2 && setNumber(1);
+  windowWidth > 1024 && number === 2 && setNumber(1);
 
   return (
     <div id="reviews">
@@ -42,7 +42,7 @@ export function ReviewsSection(): React.ReactElement {
         <div>
           <div
             style={
-              width > 1024
+              windowWidth > 1024
                 ? { transform: `translateX(calc(-100% / 3 * ${number}))` }
                 : { transform: `translateX(calc(-100% / 2 * ${number}))` }
             }
@@ -71,9 +71,9 @@ export function ReviewsSection(): React.ReactElement {
           <Button
             onClick={handleNext}
             disabled={
-              width > 1024 && number === 1
+              windowWidth > 1024 && number === 1
                 ? true
-                : width <= 1024 && number === 2
+                : windowWidth <= 1024 && number === 2
                 ? true
                 : false
             }
