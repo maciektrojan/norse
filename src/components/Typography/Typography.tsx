@@ -9,7 +9,7 @@ type TypographyProps = {
   color?: "primaryMain" | "grey0" | "grey500" | "grey800" | "grey900";
 };
 
-const variantMaping = {
+const variantMapping = {
   h1: "h1",
   h2: "h2",
   body1: "p",
@@ -24,7 +24,7 @@ export const Typography: React.FC<TypographyProps> = ({
   color,
   children,
 }) => {
-  const tag = variantMaping[variant];
+  const tag = variantMapping[variant];
   const variantHash = styles[`variant-${variant}`];
   const weightHash = styles[`weight-${weight}`];
   const colorHash = styles[`color-${color}`];
