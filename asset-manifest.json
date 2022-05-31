@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/norse/static/css/main.e40f9b51.css",
-    "main.js": "/norse/static/js/main.4135e0e7.js",
-    "static/media/1.1.png": "/norse/static/media/1.1.a2bdd205fe68a1aaecbb.png",
-    "static/media/1.2.png": "/norse/static/media/1.2.d6a3b39a504ecb5a516b.png",
-    "static/media/3.1.png": "/norse/static/media/3.1.3280dac7543dde353ea7.png",
-    "static/media/3.2.png": "/norse/static/media/3.2.898c4af149d068bdf376.png",
-    "static/media/3.3.png": "/norse/static/media/3.3.bbb138798f086d9f7f3f.png",
-    "static/media/2.2.png": "/norse/static/media/2.2.36858c2ef0ed9973ae02.png",
-    "static/media/2.1.png": "/norse/static/media/2.1.b2990b0a27b024b5ceee.png",
-    "static/media/2.4.png": "/norse/static/media/2.4.db70a46698e33c1c2a5f.png",
-    "static/media/2.3.png": "/norse/static/media/2.3.2731ae154743d1e27a57.png",
-    "static/media/Logo.svg": "/norse/static/media/Logo.36209d83207cdc922d4f9edc9426b28a.svg",
+    "main.css": "/norse/static/css/main.588b8a21.css",
+    "main.js": "/norse/static/js/main.d92c466b.js",
+    "static/media/1.1-2160w.png": "/norse/static/media/1.1-2160w.8f342d90de60e3f5d4a4.png",
+    "static/media/1.2-2160w.png": "/norse/static/media/1.2-2160w.9c0c4138163d96565c5f.png",
+    "static/media/3.1-800w.png": "/norse/static/media/3.1-800w.cd0af1e6b5457bc012ae.png",
+    "static/media/3.3-800w.png": "/norse/static/media/3.3-800w.996fd1ed0f2256196e12.png",
+    "static/media/3.2-800w.png": "/norse/static/media/3.2-800w.3378cc981e931c677a73.png",
+    "static/media/2.2-600w.png": "/norse/static/media/2.2-600w.050685c7fde7d72c7cf9.png",
+    "static/media/2.1-600w.png": "/norse/static/media/2.1-600w.4dd109fb0ba80fcecfe1.png",
+    "static/media/2.4-600w.png": "/norse/static/media/2.4-600w.6bd5a54eeeb69ce55518.png",
+    "static/media/2.3-600w.png": "/norse/static/media/2.3-600w.6a84357fb14a62be14e5.png",
     "index.html": "/norse/index.html",
-    "main.e40f9b51.css.map": "/norse/static/css/main.e40f9b51.css.map",
-    "main.4135e0e7.js.map": "/norse/static/js/main.4135e0e7.js.map"
+    "main.588b8a21.css.map": "/norse/static/css/main.588b8a21.css.map",
+    "main.d92c466b.js.map": "/norse/static/js/main.d92c466b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e40f9b51.css",
-    "static/js/main.4135e0e7.js"
+    "static/css/main.588b8a21.css",
+    "static/js/main.d92c466b.js"
   ]
 }
