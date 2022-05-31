@@ -10,7 +10,7 @@
 
 .container {
   position: relative;
-  background-image: url(../../images/1.1.png);
+  background-image: url(../../images/1.1-2160w.png);
   background-size: 1200px;
 }
 
@@ -27,7 +27,7 @@
   position: relative;
   max-width: 100%;
   height: calc(1200px / 16 * 9);
-  background-image: url(../../images/1.2.png);
+  background-image: url(../../images/1.2-2160w.png);
   background-size: 1200px;
 }
 

@@ -55,22 +55,22 @@
 }
 
 .aboutSection a:nth-child(1) {
-  background-image: url(../../images/2.1.png);
+  background-image: url(../../images/2.1-600w.png);
   background-position: -11px;
 }
 
 .aboutSection a:nth-child(2) {
-  background-image: url(../../images/2.2.png);
+  background-image: url(../../images/2.2-600w.png);
   background-position: 0;
 }
 
 .aboutSection a:nth-child(3) {
-  background-image: url(../../images/2.3.png);
+  background-image: url(../../images/2.3-600w.png);
   background-position: 0;
 }
 
 .aboutSection a:nth-child(4) {
-  background-image: url(../../images/2.4.png);
+  background-image: url(../../images/2.4-600w.png);
   background-position: -11px;
 }
 

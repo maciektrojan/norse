@@ -11,7 +11,7 @@ export function ServicesSection(): React.ReactElement {
     <div id="services">
       <div className="padding" />
       <section className={styles.servicesSection}>
-        <Container src={require("../../images/3.1.png")} alt="heat pump">
+        <Container src={require("../../images/3.1-800w.png")} alt="heat pump">
           <Typography variant="body3" weight="bold" color="grey0">
             Usługi
           </Typography>
@@ -45,7 +45,7 @@ export function ServicesSection(): React.ReactElement {
           </Link>
         </Container>
         <Container
-          src={require("../../images/3.2.png")}
+          src={require("../../images/3.2-800w.png")}
           alt="boiler room"
           direction="reverse"
         >
@@ -77,7 +77,7 @@ export function ServicesSection(): React.ReactElement {
             <Button>Zapytaj o wycenę</Button>
           </Link>
         </Container>
-        <Container src={require("../../images/3.3.png")} alt="bathroom">
+        <Container src={require("../../images/3.3-800w.png")} alt="bathroom">
           <Typography variant="h1">Technika sanitarna</Typography>
           <Typography variant="body2" color="grey800">
             Ceramika, akcesoria, a także złożone instalacje, które kryją się
