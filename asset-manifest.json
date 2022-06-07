@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/norse/static/css/main.588b8a21.css",
-    "main.js": "/norse/static/js/main.d92c466b.js",
+    "main.css": "/norse/static/css/main.428da5e1.css",
+    "main.js": "/norse/static/js/main.00ce4d2a.js",
     "static/media/1.1-2160w.png": "/norse/static/media/1.1-2160w.8f342d90de60e3f5d4a4.png",
     "static/media/1.2-2160w.png": "/norse/static/media/1.2-2160w.9c0c4138163d96565c5f.png",
     "static/media/3.1-800w.png": "/norse/static/media/3.1-800w.cd0af1e6b5457bc012ae.png",
@@ -12,11 +12,11 @@
     "static/media/2.4-600w.png": "/norse/static/media/2.4-600w.6bd5a54eeeb69ce55518.png",
     "static/media/2.3-600w.png": "/norse/static/media/2.3-600w.6a84357fb14a62be14e5.png",
     "index.html": "/norse/index.html",
-    "main.588b8a21.css.map": "/norse/static/css/main.588b8a21.css.map",
-    "main.d92c466b.js.map": "/norse/static/js/main.d92c466b.js.map"
+    "main.428da5e1.css.map": "/norse/static/css/main.428da5e1.css.map",
+    "main.00ce4d2a.js.map": "/norse/static/js/main.00ce4d2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.588b8a21.css",
-    "static/js/main.d92c466b.js"
+    "static/css/main.428da5e1.css",
+    "static/js/main.00ce4d2a.js"
   ]
 }
