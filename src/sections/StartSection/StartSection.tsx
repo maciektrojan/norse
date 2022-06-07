@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import clsx from "clsx";
-import Logo from "../../components/Logo";
+import { Logo } from "../../components/Logo";
 import { Typography } from "../../components/Typography";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import styles from "./StartSection.module.css";

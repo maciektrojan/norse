@@ -26,7 +26,7 @@ export const Review: React.FC<ReviewProps> = ({
   return (
     <div className={rootClassName}>
       <div>
-        <Typography variant="body2" weight="bold">
+        <Typography variant="body2" weight="bold" color="grey800">
           {avatar}
         </Typography>
         <div className={styles.column}>

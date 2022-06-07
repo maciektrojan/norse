@@ -46,15 +46,20 @@ export const Wrapper: React.FC = ({ children }) => {
     { id: 6, url: "contact", content: "Kontakt", icon: <InboxIcon /> },
   ];
 
+  const rootClassName = clsx(
+    styles.wrapper,
+    open ? styles.open : styles.closed
+  );
+
   return (
-    <div className={clsx(styles.wrapper, open ? styles.open : styles.closed)}>
+    <div className={rootClassName}>
       <nav>
         <div>
           <button className={styles.arrow} onClick={handleArrowClick}>
             <ArrowForwardIosIcon />
           </button>
         </div>
-        <Typography className={styles.label} variant="body3">
+        <Typography className={styles.label} variant="body3" color="grey500">
           MENU
         </Typography>
         {links.map((link) => {
@@ -71,7 +76,11 @@ export const Wrapper: React.FC = ({ children }) => {
             >
               <Typography variant="body3">{link.content}</Typography>
               <div>{link.icon}</div>
-              <Typography className={styles.tooltip} variant="body3">
+              <Typography
+                className={styles.tooltip}
+                variant="body3"
+                color="grey900"
+              >
                 {link.content}
               </Typography>
             </Link>
