@@ -3,8 +3,8 @@
 @value navWidth: 200px;
 
 *:focus-visible {
-  border-color: transparent !important;
   border-radius: 8px;
+  border-color: transparent !important;
   outline: 1.5px solid primaryMain;
   outline-offset: -1px;
 }

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import clsx from "clsx";
+import React, { useState } from "react";
 import { Logo } from "../../components/Logo";
 import { Typography } from "../../components/Typography";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";

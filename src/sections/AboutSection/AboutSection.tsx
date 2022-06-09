@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import EastIcon from "@mui/icons-material/East";
 import ExploreIcon from "@mui/icons-material/Explore";
 import PersonIcon from "@mui/icons-material/Person";
 import SellIcon from "@mui/icons-material/Sell";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import { Typography } from "../../components/Typography";
 import styles from "./AboutSection.module.css";
 

@@ -2,8 +2,8 @@ import React from "react";
 import { Wrapper } from "./components/Wrapper";
 import { AboutSection } from "./sections/AboutSection";
 import { ContactSection } from "./sections/ContactSection";
-import { ReviewsSection } from "./sections/ReviewsSection";
 import { PartnersSection } from "./sections/PartnersSection";
+import { ReviewsSection } from "./sections/ReviewsSection";
 import { ServicesSection } from "./sections/ServicesSection";
 import { StartSection } from "./sections/StartSection";
 

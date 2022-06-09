@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CommentIcon from "@mui/icons-material/Comment";
 import ConstructionIcon from "@mui/icons-material/Construction";
@@ -8,8 +6,10 @@ import InboxIcon from "@mui/icons-material/Inbox";
 import PeopleIcon from "@mui/icons-material/People";
 import PersonIcon from "@mui/icons-material/Person";
 import clsx from "clsx";
-import { Typography } from "../Typography";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
+import { Typography } from "../Typography";
 import styles from "./Wrapper.module.css";
 
 export const Wrapper: React.FC = ({ children }) => {

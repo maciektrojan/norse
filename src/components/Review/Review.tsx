@@ -1,6 +1,6 @@
-import React from "react";
-import clsx from "clsx";
 import StarIcon from "@mui/icons-material/Star";
+import clsx from "clsx";
+import React from "react";
 import { Typography } from "../Typography";
 import styles from "./Review.module.css";
 

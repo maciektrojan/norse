@@ -1,5 +1,5 @@
 @value colors: "../../components/colors.module.css";
-@value primaryMain, grey0, grey50, grey100, grey200, grey300, grey400, grey500, grey600, grey700, grey800, grey900 from colors;
+@value grey50, grey300 from colors;
 
 .partnersSection > div {
   border-top: 1px solid grey300;
